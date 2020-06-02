@@ -1,0 +1,20 @@
+[
+  {"content": "Provisioning"},
+  {"content": "Cloud / IAAS", "name": "cloud"},
+  {"content": "Virtualization"},
+  {"content": "Operating<br />Systems", "name": "os"},
+  {"content": "VCS"},
+  {"content": "Methods"},
+  {"content": "OS coding"},
+  {"content": "Configuration<br />Management", "name": "cfgmgmt"},
+  {"content": "Security"},
+  {"content": "Containers"},
+  {"content": "Databases"},
+  {"content": "Cloud / PAAS", "name": "paas"},
+  {"content": "Web server"},
+  {"content": "Web backend"},
+  {"content": "Web frontend"},
+  {"content": "Typesetting"},
+
+  {"id": 99, "content": "&nbsp;", "className": "group-header"}
+]
