@@ -1,8 +1,6 @@
 [
-  {"id": "ServiceRocket", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />SysOps Engineer", "start": "2006-06-01", "end": "2012-03-01", "type": "background", "className": "servicerocket"},
-  {"id": "ServiceRocket", "content": "<img src='img/servicerocket.png' class='logo' /><b>Mindvalley</b><br />Site Reliability Engineer", "start": "2012-03-01", "type": "background", "className": "servicerocket"},
-  {"id": "Mindvalley", "content": "<img src='img/mindvalley.png' class='logo' /><b>Mindvalley</b><br />Engineering Manager", "start": "2012-03-01", "type": "background", "className": "mindvalley"},
-  {"id": "Mindvalley", "content": "<img src='img/mindvalley.png' class='logo' /><b>Mindvalley</b><br />Head of Engineering", "start": "2012-03-01", "type": "background", "className": "mindvalley"},
+  {"id": "ServiceRocket", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />SysOps Engineer", "start": "2016-06-01", "end": "2012-03-01", "type": "background", "className": "servicerocket-sysops"},
+  {"id": "ServiceRocket", "content": "<img src='img/servicerocket.png' class='logo' /><b>Mindvalley</b><br />Site Reliability Engineer", "start": "2012-03-01", "type": "background", "className": "servicerocket-sre"},
 
   {"group": "provisioning", "content": "Debian FAI", "start": "2006-06-01", "end": "2012-03-01", "className": "contributed"},
   {"group": "provisioning", "content": "Kickstart", "start": "2006-06-01", "className": "implemented"},
