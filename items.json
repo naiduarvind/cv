@@ -1,5 +1,6 @@
 [
-  {"id": "Hello", "content": "<img src='img/servicerocket.png' class='logo' /><b>FinchVPN</b><br />Co-Founder", "start": "2009-03-01", "end": "2016-11-30", "type": "background", "className": "orange"},
+  {"id": "Evozi", "content": "<img src='img/evozi.jpg' class='logo' /><b>Evozi</b><br />Founder", "start": "2007-04-04", "end": "2009-02-28", "type": "background", "className": "orange"},
+  {"id": "FinchVPN", "content": "<img src='img/finchvpn.png' class='logo' /><b>FinchVPN</b><br />Co-Founder", "start": "2009-03-01", "end": "2016-11-30", "type": "background", "className": "orange"},
   {"id": "Orange", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />SysOps Engineer", "start": "2016-12-05", "end": "2017-07-01", "type": "background", "className": "orange"},
   {"id": "Camptocamp", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />Site Reliability Engineer", "start": "2017-07-02", "end": "2019-10-31", "type": "background", "className": "camptocamp"},
 
@@ -68,5 +69,5 @@
   { "group": "web frontend", "content": "Bootstrap", "name": "bootstrap", "start": "2015", "className": "used"},
   { "group": "web frontend", "content": "AngularJS", "name": "angularjs", "start": "2017", "className": "used"},
 
-  { "group": "typesetting", "content": "LaTeX", "name": "latex", "start": "2001", "className": "contributed"}
+  { "group": "typesetting", "content": "LaTeX", "name": "latex", "start": "2009", "className": "contributed"}
 ]
