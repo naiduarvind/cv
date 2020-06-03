@@ -1,1 +1,0 @@
-Having started coding with PHP in 2002, it was only natural that I would get interested in MySQL when I got needs for a relational database. It remained my database of choice for years, until I started working with projects using PostgreSQL.
