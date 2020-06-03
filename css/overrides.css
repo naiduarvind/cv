@@ -94,7 +94,7 @@ img.identity {
   float: left;
   margin-right: 5px;
   padding: 1px;
-  border: 1px solid lightgray;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 /* Group-header "reserves" an empty line for background titles */
