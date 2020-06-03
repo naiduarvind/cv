@@ -71,23 +71,23 @@ img.identity {
 
 /* Background items */
 .vis-item.vis-background.servicerocket {
-  background: #E9E1CC;
-  color: #5383B8;
+  background: #F9FFEA;
+  color: #000000;
 }
 
 .vis-item.vis-background.mindvalley {
   background-color: #EA9085;
-  color: #5383B8;
+  color: #000000;
 }
 
 .vis-item.vis-background.evozi {
-  background: #FECEAB;
-  color: #5383B8;
+  background: #8ac6d1;
+  color: #000000;
 }
 
 .vis-item.vis-background.finchvpn {
   background-color: #DCD6F7;
-  color: #5383B8;
+  color: #000000;
 }
 
 .vis-item.vis-background img.logo {
