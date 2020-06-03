@@ -1,6 +1,6 @@
 [
-  {"id": "Orange", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />SysOps Engineer", "start": "2006-06-01", "end": "2012-03-01", "type": "background", "className": "orange"},
-  {"id": "Camptocamp", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />Site Reliability Enginee", "start": "2012-03-01", "type": "background", "className": "camptocamp"},
+  {"id": "Orange", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />SysOps Engineer", "start": "2016-12-05", "end": "2017-07-01", "type": "background", "className": "orange"},
+  {"id": "Camptocamp", "content": "<img src='img/servicerocket.png' class='logo' /><b>ServiceRocket</b><br />Site Reliability Engineer", "start": "2017-07-02", "end": "2019-10-31", "type": "background", "className": "camptocamp"},
 
   {"group": "provisioning", "content": "Debian FAI", "start": "2006-06-01", "end": "2012-03-01", "className": "contributed"},
   {"group": "provisioning", "content": "Kickstart", "start": "2006-06-01", "className": "implemented"},
