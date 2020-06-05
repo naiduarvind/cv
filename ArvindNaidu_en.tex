@@ -1,7 +1,7 @@
 %% Based off `template.tex'.
-%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2006-2010 Arvind Naidu (arvind@thebility.engineer).
 %%
-%% Copyright 2010-2017 Raphaël Pinson (raphink@gmail.com).
+%% Copyright 2010-2020 Arvind Naidu (arvind@thebility.engineer).
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License version 1.3c,
@@ -10,28 +10,28 @@
 % Version: 20110122-4
 
 
-\documentclass[11pt,a4paper,nolmodern]{moderncv}
+\documentclass[11pt,a4paper,nolmodern,colorlinks=true,linkcolor=true]{moderncv}
 
-\usepackage{RaphaelPinson}
-\address{Chemin du Jura 3}{1041~Poliez-le-Grand}{Switzerland}
+\usepackage{ArvindNaidu}
+\address{KL Gateway Residences}{Kuala Lumpur, Malaysia}
 
 \usepackage[english]{babel}
 \linespread{0.9}
 % for some reason, lines take up a lot of space in itemize in English...
 \newenvironment{tightitemize}
    {\begin{itemize}
-   \setlength{\parskip}{0pt}}
+   \setlength{\parskip}{2em}}
    {\end{itemize}}
 
 
 % personal data
-\title{Open-Source Technologist}
+\title{\href{https://thebility.engineer}{The *bility Engineer}}
 \extrainfo{%
-\linkedin~\httplink{www.linkedin.com/in/raphink}\\%
-\octocat~\httplink{www.github.com/raphink}\\%
-Driving License} % optional, remove the line if not wanted
+\linkedin~\httplink{linkedin.com/in/naiduarvind}\\%
+\octocat~\httplink{github.com/naiduarvind}\\%
+} % optional, remove the line if not wanted
 
-\myquote{Freely you have received, freely give}{Matthew 10:8}
+\myquote{Adoption is the best form of flattery!}{Arvind Naidu}
 
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
@@ -41,6 +41,7 @@ Driving License} % optional, remove the line if not wanted
 \begin{document}
 \setmainfont{Minion Pro}
 \setsansfont{Myriad Pro}
+\hypersetup{urlcolor=blue }
 
 \hyphenpenalty=10000
 \maketitle
@@ -48,191 +49,177 @@ Driving License} % optional, remove the line if not wanted
 \section{Skills}
 
 \subsection{Expert Skills}
-\cvcomputer{Configuration Management}{Puppet\contributor, Docker, Augeas\developer}
-           {Debian OSes}{Debian\contributor, Ubuntu\developer}
+\cvcomputer{Configuration Management}{Chef, Consul, Docker, Helm, Jsonnet, Kuztomize, Puppet, Terraform }
+           {OSes}{CentOS, Debian, FreeBSD, Arch Linux, NixOS, Mac}
 
 \subsection{Development}
-\cvcomputer{Languages}{C, Perl, Python, Shell/Bash, Ruby, Go, GNU Make, Ada, Lua}
-           {Web}{HTML/XHTML, CSS, JavaScript, Ajax, Jquery, Bootstrap, PHP, Semantic Web}
-\cvcomputer{Frameworks}{Django, Google AppEngine, Google Wave, Netvibes}
+\cvcomputer{Languages}{C, Go, GNU Make, Haskell, Java, Perl, Python, Rego, Shell/Bash, Scala}
+           {Web}{HTML/XHTML, CSS, JavaScript, Ajax, Jquery, Bootstrap, PHP, Nuxt}
+\cvcomputer{Frameworks}{Django, Google AppEngine, Hibernate, Laravel, SpringBoot, Spring}
            {Databases}{MySQL, PostgreSQL, NoSQL (GQL), SPARQL}
-\cvcomputer{Formats}{XML/XPath, SGML, YAML/JSON, RDF/RSS/FOAF}
-           {Methods}{Object Oriented Programming, MVC, Unit Tests, UML}
-\cvcomputer{Source Management}{RCS/CVS, SVN, Bazaar, Git, Mercurial}
-           {Tools}{Autotools, Cmake, Trac,
-                   Gforge, Launchpad, GitHub}
+\cvcomputer{Formats}{XML/XPath, SGML, YAML/JSON, RDF/RSS/FOAF, Protobuf, GQL}
+           {Methods}{BDD, Chaos Engineering, Critical Path Driven Development (CPDD), C4Model, DDD, MVC, OOP, Resiliency Engineering, TDD, Test in Production (Observability), UML}
+\cvcomputer{Source Management}{Bazaar, Git,  Mercurial, RCS/CVS, SVN}
+           {Tools}{Autotools, Cmake, Gforge, GitHub, Launchpad, PromLens, Trac, ZSH}
 
 \subsection{Systems and Networks Administration}
-\cvcomputer{Web}{Apache, Lighttpd, Nginx, Varnish, Bind, Squid, Dansguardian, VsFTPd}
-           {Monitoring}{BB4/Hobbit, Nagios, Munin, Cacti, Graphite, Logstash}
-\cvcomputer{Mail}{Postfix, Exim, SSMTP}
+\cvcomputer{Web}{Apache, Bind, Dansguardian, Lighttpd, Nginx, Squid, Varnish, VsFTPd}
+           {Monitoring}{BB4/Hobbit, Cacti, AWS CloudWatch, Grafana, Graphite, Logstash, Loki, Munin, Nagios, Prometheus}
+\cvcomputer{Mail}{Postfix, Exim, SSMTP, AWS SES}
            {Backup}{Amanda, BackupManager, Duplicity}
-\cvcomputer{Installation / Deployment}{FAI, Kickstart, Reprepro, Cfengine,
-                                         Puppet\contributor, MCollective\contributor, Augeas\developer}
-           {Networks}{DHCPd, VLANs, OpenVPN, Keepalived}
-\cvcomputer{Operating Systems}{GNU/Linux (Debian\contributor, Ubuntu\developer, RedHat),
-                               MacOS X, Windows, *BSD}
-           {Databases}{MySQL, PostgreSQL, SQLite, BerkeleyDB, CouchDB}
-\cvcomputer{Virtualization}{Xen, VMWare, Docker, Rancher, Kubernetes, OpenShift, Openstack, Amazon Web Services}
-           {Security}{SSL, PGP/GnuPG, OpenSSH}
+\cvcomputer{CI / CD}{ArgoCD, Augeas, Cfengine, CircleCI, FAI, FluxCD, Jenkins(X), Kickstart, MCollective, Prow, Puppet, Reprepro, Spinnaker}
+           {Networks}{DHCPd, Keepalived, OpenVPN, QUIC, VLANs, VPC}
+\cvcomputer{Operating Systems}{GNU/Linux (Debian, Ubuntu, RedHat), MacOS X, Windows, *BSD}
+           {Databases}{BerkeleyDB, CouchDB, Graphite, InfluxDB, MySQL, Neo4j, PostgreSQL, SQLite}
+\cvcomputer{Virtualization}{Amazon Web Services, Docker, Google Cloud Platform, Kubernetes, OpenVZ, OpenShift, Openstack, Rancher, VMWare (Vsphere), Xen}
+           {Security}{OpenSSH, PGP/GnuPG, SSL, Vault}
 
-\subsection{Office and tools}
-\cvcomputer{Office}{OpenOffice/LibreOffice, Microsoft Office, Gimp,
-                    Inkscape}
-           {Project Management}{TaskJuggler, GanttProject}
+\subsection{Office and Tools}
+\cvcomputer{Office}{Gimp, Google Apps, Inkscape, Microsoft Office, OpenOffice/LibreOffice, }
+           {Project Management}{Architecture Migration Chars, Bounded Context Canvas, Core Domain Charts, Domain Message Flow, GanttProject, Jira, Structurizr, TaskJuggler, Systems Canvas, Trello, Wardley Maps, Wrike}
 \cvcomputer{Edition}{\TeX{}, \LaTeX{}, \XeTeX{}, \LuaTeX{}}
-           {Wikis}{MediaWiki, MoinMoin}
-
-\devnotes{Developer}{Contributor}
+           {Wikis}{Confluence, Github Wiki, MediaWiki, MoinMoin}
 
 \newpage
 
 \section{Experience}
-\subsection{IT Experience}
+\subsection{Engineering Experience}
 
 % Center labels and use "Since"
 %\tltextstart[base]{\scriptsize}
 %\tltextend[base]{\scriptsize}
 %\tlsince{Since~}
 
-\tlcventry{2012}{0}{Instrastructure Developer \& Trainer}{\href{http://www.camptocamp.com}{Camptocamp}}{}{Chambéry}%
-  {Infrastructure Developer, Consultant \& Trainer for internal and client infrastructures.
-\begin{itemize}
-  \item Systems Engineer:
+\tlcventry{2020}{0}{Head of Engineering \& Acting Operations Lead}{\href{https://mindvalley.com}{Mindvalley}}{}{}%
+  {Head of Engineering for Mindvalley Technology:
     \begin{itemize}
-      \item Operated a fleet of 500+ Puppet-operated servers (including servers for EPFL and Swisstopo);
-      \item Architectured and deployed a secured MCollective cluster using RabbitMQ and SSL;
-      \item Planned and executed migrations between major Puppet versions (0.25 to 2.7 and 2.7 to 3.5);
-      \item Wrote and contributed to 100+ Puppet modules (mostly public), including plugins (facts, functions, types \& providers, indirectors), with unit tests;
-      \item Managed servers hosted on Amazon Web Services (with Cloud Formation) and OpenStack;
-      \item Packaged software for RedHat and Debian platforms. Operated and improved the package build systems and package repositories.
-    \end{itemize}
-  \item Training Leader:
-    \begin{itemize}
-      \item Initiated strategic partnerships ­with software editors (Puppet Labs, Red Hat);
-      \item Taught official Puppet Labs curriculum (Puppet Fundamentals, Advanced Puppet, Extending Puppet with Ruby);
-      \item Wrote and taught Augeas curriculum (Augeas Fundamentals);
-      \item Taught teams from major universities/labs (CERN, EPFL), private banks (in France and Switzerland) and governmental IT teams.
-    \end{itemize}
-  \item Consultant:
-    \begin{itemize}
-      \item Performed Puppet/Devops consulting for private banks and governmental IT teams.
+      \item Collaborated with the Chief Product Officer in migrating the entire engineering division off Wrike to Jira adopting Kanban Flow for brownfield projects and Scrum for greenfield projects quickly proving to be a success in delivering measureable outcomes;
+      \item Worked with the Product Marketing department to develop a streamlined process with the help of Operations and Acquisition team for going live with new launches reducing Mean Time to Live from 1 month to 1 day which was a huge success accredited by the Chief Executive Officer;
+      \item Conducted a bi-weekly session to foster a highly collaborative culture with the Tech Leads to adopt measurable CI/CD going from 0 to 37 pipelines within 3 months along with newer concepts of observable GitOps to ensure visibility of delivery excellence -- observable value stream;
+      \item Automated visibility of cost for the organisation by taking the ITSM approach and the guidance of ITIL practices working with the Chief Revenue Officer and Chief Operating Officer which automatically tracks CAPEX and OPEX with accountability attached using Quickbooks, Jira and Data Studio;
+      \item Fostered the adoption of standardized C4Model for the entire engineering department backed by a dynamically updated graph database by listening to changes done in Github for ISO 27001 which also proved to reduce Mean Time to Detection for engineers to troubleshoot a change;
+      \item Led the effort with the Chief Technology Officer and Chief Product Offier to develop engineering-wide good practices, lean standardized specification guidelines, and (inter and intra)-departmental communications significantly reducing back and forth clarifications driving deliverables quicker.
     \end{itemize}
 \end{itemize}}
 
-\tlcventry{2006}{2012}{Systems Engineer}{\href{http://www.orness.com}{ORNESS} then \href{http://www.alten.fr}{Alten}}{Sophia Antipolis}{}{Consultant at France T\'el\'ecom
-\begin{tightitemize}
- \item Administration of Cfengine, FAI and the software package repository;
- \item Renewal and industrialization of the software deployment system for Debian/Ubuntu;
- \item Management of the Gforge (collaborative development web interface) platform;
- \item Development of QA tools for systems and configurations policy compliance;
- \item Integration of the continuous integration platform (Hudson) with the Debian/Ubuntu software deployment system;
- \item Monitoring of the fleet of servers;
- \item Writing of technical documentation.
-\end{tightitemize}}
-
-\tlcventry{2008}{0}{Developer}{\href{http://www.augeas.net}{Augeas}}{Internet}{}{Development, bugfix and documentation
-\begin{tightitemize}%
- \item Writing of Augeas lenses;
- \item Coding in C;
- \item Improvement of autotools configuration;
- \item NaturalDocs Integration (documentation generator);
- \item International Conference Speaker (Belgium (\href{http://archive.fosdem.org/2009/schedule/events/fedora_augeas}{FOSDEM})).
-\end{tightitemize}}
-
-\tlcventry{2005}{0}{\href{https://launchpad.net/~raphink}{Developer/Maintainer}}{\href{http://www.ubuntu.com}{Ubuntu}}{Internet}{}{Development, bugfix and documentation
-\begin{tightitemize}%
- \item Creation, maintenance and review of software packages;
- \item Writing of technical documentation for developers;
- \item Maintenance of the QA system for software package;
- \item Bug management;
- \item International Conference Speaker (Hungary, Germany (\href{http://www.linuxtag.org/}{LinuxTag})).
-\end{tightitemize}}
-
-
-\tlcventry{2005}{0}{Open-Source Contributor}{Various projects}{Internet}{}{%
-\begin{tightitemize}%
- %\item \href{https://launchpad.net/wavebiblebot}{Flammard Bible Bot}: Google Wave Bot, a personal project written in Python/AppEngine;
- %\item \href{http://www.ichthux.com}{Ichthux}: Creation and maintenance of a specialized Linux distribution based on Ubuntu;
- %\item \href{https://launchpad.net/byobu}{Byobu}: contribution of scripts and patches in Python and Bash;
- \item \href{http://search.cpan.org/~raphink}{CPAN Author}: maintainer of several Perl modules on CPAN;
- \item \href{http://www.ctan.org/author/id/pinson}{CTAN Author}: maintainer of several \LaTeX{} packages on CTAN.
-\end{tightitemize}}
-
-
-\subsection{Other Experience}
-
-\tlcventry{2009}{0}{Translator and Editor}{La Colombe Calvary}{Nice}{}{%
-\begin{tightitemize}%
- \item Translation of English theology books into French;
- \item Edition of books using \LaTeX{}, \XeTeX{} and \LuaTeX{};
- \item Publishing of books using on-demand publishing services (CreateSpace and Lulu).
-\end{tightitemize}}
-
-% Restore normal labels
-%\tltext{\scriptsize}
-
-%\tldatelabelcventry{2004}{July 2004}{Blue Collar Internship}{\href{http://www.snecma.com}{SNECMA}}{Moissy-Cramayel}{}{Assembled and equilibrated turbo reactors for planes}
-
-%\tldatelabelcventry{2002}{Summer 2002}{Fire Safety Officer}{\href{http://www.euroguard.fr/}{Euroguard}}{Marcoussis}{}{Supervised an Alcatel research site}
-
-%\tldatelabelcventry{2001}{Summer 2001}{Surveillance Agent}{Penauille Polys\'ecurit\'e}{Paris}{}{Supervised the headquarters of the French Red Cross}
-
-%\tllabelcventry{1999}{2000}{1999--2000}{Certified First Responder}{\href{http://www.croix-rouge.fr/}{French Red Cross}}{Paris Suburbs}{}{Served in several volunteer missions as a paramedic}
-
+\tlcventry{2019}{2020}{Engineering Manager \& Acting Operations Lead}{\href{https://mindvalley.com}{Mindvalley}}{}{}%
+  {Engineering Manager for Mindvalley Technology:
+    \begin{itemize}
+      \item Established a cross-functional Operations team made up of IT, Infrastructure, Security, and QA with the help of the Chief Technology Officer which quickly proved to be successful in reducing development time, release corrections, customer feature implementations and support requests (internal / external);
+      \item Overhauled the hiring pipeline for the engineering division with the help of the People \& Culture team and Tech Leads with instrumentation that surfaced cost per hire in Greenhouse which helped remove the bottleneck of culture fit interviews quickly helping the Mobile team to backfill -- a problem for over a year and later proving to be successful with insourcing an application;
+      \item Automatically vizualised the operating costs for the entire engineering division collaborating with the Chief Technology Officer by setting up proper querying mechanism using Honeycomb with proper alert thresholds set for each team associated to yearly budget which also successfully surfaced cost per customer for the entire organisation later;
+      \item Spearheaded the IPO initiative for the organisation working with an InfoSec Manager by documenting the current processes from all departments and streamlining the processes adopting an automation first mindset with the help of the Operations team being apart of the governance board -- later establishing a lean Change Approval Board (CAB).
+    \end{itemize}
+\end{itemize}}
 
 \pagebreak
 
+\tlcventry{2016}{2019}{Site Reliability Engineer}{\href{https://servicerocket.com}{ServiceRocket}}{}{\href{https://learndot.com}{Learndot}}%
+  {Site Reliability Engineer for Learndot (Orange) Business Unit:
+    \begin{itemize}
+      \item Spearheaded an R\&D initiative of a new scalable platform to completion and developed the migration pipeline of customers residing in the legacy private cloud providing a reliable / stable infrastructure;
+      \item Devised visibility of costing on each service to the stakeholders that allowed insights to tooling usages ultimately developing mechanisms to eliminate waste across engineering by \$20k/year;
+      \item Cultivated ownership among engineers by simplifying observability using a one view, one truth principle on reliability regressions and security vulnerabilities by adopting tools with buy-in;
+      \item Embraced appropriately observable systems adopting the OpenTracing standard for instrumentation in the business unit with members of the SRE team and cross-polinated the mindset to the development team;
+      \item Re-established trust between engineering and support teams by creating consistent outcomes and stabilizing the platform, bringing bugs identified per week down by 90 percent.
+    \end{itemize}
+}
+
+\tlcventry{2016}{2017}{Systems Operations Engineer}{\href{https://servicerocket.com}{ServiceRocket}}{}{\href{https://learndot.com}{Learndot}}%
+  {Systems Operations Engineer for Learndot (Orange) Business Unit:
+    \begin{itemize}
+      \item Built CI/CD pipelines in Jenkins and Jira to fire-and forget automated deployments for customers with different artifact versions and ensuring version consistency between environments;
+      \item Centralized logging from over 40 customers to enhance engineers and support engineers experience in troubleshooting thus reducing intervention to customer instances adhering to compliance;
+      \item Handled complex escalations involving some of the largest customers by adopting short-term fix and long-term prevention mindset;
+    \end{itemize}
+}
+
+% \tlcventry{2005}{0}{Open-Source Contributor}{Various projects}{Internet}{}{%
+% \begin{tightitemize}%
+%  %\item \href{https://launchpad.net/wavebiblebot}{Flammard Bible Bot}: Google Wave Bot, a personal project written in Python/AppEngine;
+%  %\item \href{http://www.ichthux.com}{Ichthux}: Creation and maintenance of a specialized Linux distribution based on Ubuntu;
+%  %\item \href{https://launchpad.net/byobu}{Byobu}: contribution of scripts and patches in Python and Bash;
+%  \item \href{http://search.cpan.org/~raphink}{CPAN Author}: maintainer of several Perl modules on CPAN;
+%  \item \href{http://www.ctan.org/author/id/pinson}{CTAN Author}: maintainer of several \LaTeX{} packages on CTAN.
+% \end{tightitemize}}
+
+\subsection{Other Experience}
+
+\tlcventry{2018}{0}{Founding Partner}{Bespoke Motors Sdn Bhd}{}{}{%
+\begin{tightitemize}%
+ \item Brick-and-mortar showroom for high quality luxury and exotic vehicles.
+\end{tightitemize}}
+
+\tlcventry{2009}{0}{Co-Founder}{FinchVPN}{}{}{%
+\begin{tightitemize}%
+ \item Self-sustaining online service providing secure VPN connection to B2C and B2B clients.
+\end{tightitemize}}
+
+\tlcventry{2007}{0}{Founder}{Evozi}{}{}{%
+\begin{tightitemize}%
+ \item Managing 6 remote developers to build applications (web and mobile) for clients;
+ \item Self-built apps include {\href{https://apps.evozi.com/apk-downloader/}{APK Downloader}}, {\href{https://play.google.com/store/apps/details?id=com.evozi.injector}{HTTP Injector}}, and {\href{https://play.google.com/store/apps/details?id=com.evozi.network}{Speed Indicator}}.
+\end{tightitemize}}
+
+\pagebreak
+
+\section{Successful Applications}
+
+\tldatecventry{2020}{Senior Site Reliability Engineer}{Netflix Los Gatos}{}{}{}
+
+\tldatecventry{2019}{Engineering Manager}{Stripe Dublin}{}{}{}
+
+\tldatecventry{2019}{Performance Engineer}{Netflix Los Gatos}{}{}{}
+
+
 \section{Education}
 
-\tldatecventry{2013}{Puppet Trainer}{\href{https://puppetlabs.com/services/puppet-training/}{PuppetLabs}}{Amsterdam}{}{Official Training Partner for PuppetLabs' courses (Puppet Fundamentals, Puppet Advanced, Extending Puppet with Ruby)}
+\tllabelcventry{2012}{2016}{2012-2016}{Bachelor of Software Engineering (Hons.)}{\href{https://university.taylors.edu.my/}{Taylor's Lakeside University}}{Kuala Lumpur}{}{Last Semester Dropout with Special Tertiary Scholarship - 3.96 CGPA }
 
-\tldatecventry{2009}{ITIL{\LARGE\textregistered} v3 Foundation}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{Sophia Antipolis}{}{Organization and efficiency of the Information System}
+\tllabelcventry{2011}{2012}{2011-2012}{Foundation in Computing}{\href{https://university.taylors.edu.my/}{Taylor's Lakeside University}}{Kuala Lumpur}{}{Best Student Award with High Distinction - 3.75 CGPA}
 
-\tldatecventry{2005}{Student in Business Creation and Management}{\href{http://www.creation-transmission.com/}{Cr\'eafort}}{Poitiers}{}{Accounting, Management, Marketing, Law}
 
-\tldatecventry{2005}{Student in Pedagogy (`Gestion Mentale')}{\href{http://www.ifgm.org/}{IFGM}}{Bordeaux}{}{Pedagogy, Didacticism, Cognitive Psychology}
+\section{Personal Interests}
 
-\tllabelcventry{2003}{2005}{2003--2005}{Student in Mechanical Engineering}{\newline\href{http://www.ensma.fr}{\'Ecole Nationale Sup\'erieure de M\'ecanique et d'A\'erotechnique (ENSMA)}}{Poitiers}{}{Solid \& Fluid Mechanics, Mathematics, Combusion \& Propulsion, Materials Science, Automation, Signal Processing, Computer Sciences, Management}
+\cvhobby{Contributions}{Conftest, Hashicorp, Honeycomb, Open Policy Agent, OpenTelemetry, Value-Stream}
 
-\tldatecventry{2004}{Licence, equivalent of a British Bsc, in Mechanics}{\href{http://www.univ-poitiers.fr/}{Universit\'e de Poitiers}}{Poitiers}{}{Solid \& Fluid Mechanics, Mathematics, Combusion \& Propulsion, Materials Science, Automation, Signal Processing, Computer Sciences, Management}
 
-\tllabelcventry{2002}{2003}{2002--2003}{Student in Chemistry}{\href{http://www.u-psud.fr}{Universit\'e de Paris XI}}{Orsay}{}{Chemistry, Physics, Mathematics}
+\section{Public Speaking}
 
-\tllabelcventry{2000}{2002}{2000-2002}{Student in Medicine (PCEM1)}{\href{http://www.u-psud.fr}{Universit\'e de Paris XI}}{Orsay}{}{Biology, Chemistry, Biochemistry, Physics, Anatomy, Histology, Physiology, Law}
+\tldatecventry{2019}{\href{https://youtu.be/17azhiILQT8?t=637}{Tug of War To Pull The Plug: Bare Metal To GKE Migration!}}{\href{https://www.facebook.com/gdgcloudkl}{GDGC KL}}{}{}{}
 
-\tldatecventry{2000}{Baccalaur\'eat, equivalent of British A Level}{\href{http://www.ac-versailles.fr/etabliss/orsay/}{Lyc\'ee Blaise Pascal}}{Orsay}{with distinction `mention bien'}{}
+\tldatecventry{2019}{\href{https://www.beautiful.ai/-Lj-73V-Xwa7IoQ7yPcL/1}{Black Swans of EKS in Production (Day 118)}}{\href{https://www.facebook.com/groups/awsugmy}{AWS User Group Malaysia}}{}{}{}
 
+\tldatecventry{2019}{\href{https://youtu.be/N8FI0qoouF8?t=2728}{The Journey of Being an SRE}}{\href{https://www.facebook.com/groups/devopsmalaysia}{DevOps Malaysia}}{}{}{}
+
+\tldatecventry{2018}{\href{https://app.ludus.one/8fc92dec-9989-4a5b-95b2-820140dc7bd5}{Chaos Engineering}}{\href{http://servicerocket.com}{ServiceRocket Rocketspeak}}{}{}{}
+
+\tldatecventry{2018}{\href{https://app.ludus.one/4cf64f1a-9fde-4354-814f-4d65c514876a}{Simplifying Observability on Regressions}}{\href{http://servicerocket.com}{ServiceRocket Hackweek}}{}{}{}
 
 
 \section{Certifications}
 
-\tldatecventry{2019}{Red Hat Certified Specialist in OpenShift Administration}{\href{https://www.redhat.com/en/services/training/ex280-red-hat-certified-specialist-in-openshift-administration-exam}{Red Hat}}{190-035-931}{}{OpenShift}
+\tldatecventry{2020}{Visualising Software Architecture in C4Model Workshop}{\href{https://architectis.je}{Architectis}}{}{}{}
 
-\tldatecventry{2013}{Puppet Certified Developer}{\href{https://puppetlabs.com/services/certification/puppet-developer/}{PuppetLabs}}{PCD0000011}{}{Puppet IT automation software}
+\tldatecventry{2019}{Red Hat Certified Specialist in OpenShift Administration}{\href{https://www.redhat.com/en/services/training/ex280-red-hat-certified-specialist-in-openshift-administration-exam}{Red Hat}}{}{}{}
 
-\tldatecventry{2013}{Puppet Certified Professional}{\href{https://puppetlabs.com/services/certification/puppet-professional/}{PuppetLabs}}{PCP0000116}{}{Puppet IT automation software}
+\tldatecventry{2019}{Certified Kubernetes Administrator Program}{\href{https://www.cncf.io/certification/ckad/}{CNCF}}{}{}{}
 
-\tldatecventry{2009}{ITIL{\LARGE\textregistered} v3 Foundation Examination}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{00055512}{}{Organization and efficiency of the Information System}
+\tldatecventry{2019}{ITIL{\LARGE\textregistered} v3 Foundation Examination}{\href{http://www.itil-officialsite.com/home/home.asp}{EXIN}}{}{}{}
+
+\tldatecventry{2017}{Amazon Web Services Certified Solutions Architect - Professional}{\href{https://aws.amazon.com/certification/certified-solutions-architect-professional}{AWS}}{}{}{}
+
+\tldatecventry{2016}{Certified Network Professional Security}{\href{https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/professional/ccnp-security.html}{Cisco}}{}{}{}
+
+\tldatecventry{2014}{Certified Network Associate Security}{\href{https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-security.html}{Cisco}}{}{}{}
 
 
-\section{Foreign Languages}
-\cvlanguage{French}{Native}{Mother Tongue}
-\cvlanguage{English}{Fluent}{Daily practice, conferences given in English}
-\cvlanguage{Spanish}{Good Level}{Occasional practice}
-\cvlanguage{German}{Good Level}{Studied 9 years in school}
-%\cvlanguage{Russian}{Intermediary Level}{Studied 3 years in school}
-%\cvlanguage{Dutch}{Beginner}{Studied alone}
-%\cvlanguage{Swedish}{Beginner}{Studied alone}
+% \section{Foreign Languages}
 
-\section{Personal interests}
-
-\cvhobby{Music}{Clarinet, piano, organ, saxophone}
-\cvhobby{Sports}{Hiking, sailing, golf, climbing}
-\cvhobby{Contributions}{Wikipedia, OpenStreetMap}
-\cvhobby{Memberships}{President of the cultural association `la Colombe de Savoie'}
-\cvhobby{}{Ubuntu member}
-\cvhobby{Others}{Travels, reading}
+% \cvlanguage{Telugu}{Native}{Mother Tongue}
+% \cvlanguage{Tamil}{Native}{Mother Tongue}
+% \cvlanguage{English}{Fluent}{Daily}
+% \cvlanguage{Malay}{Fluent}{Daily}
 
 %\renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
